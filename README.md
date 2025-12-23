@@ -1,5 +1,8 @@
 This is an Arduino library for HiWonder motor controller.  This is the unit that comes with their tank-tread kit, and a few other kits they sell.  Their documentation is horrendous, so I've taken some of their sample code and placed it here for reference.  I didn't write this code, I just took their sample code, cleaned it up a bit and made an Arduino library out of it, and added a couple of very basic helper functions to make it easy to set the motor speeds and read the counters:
 
+Initialize()
+  Sets the motor type and polarity.  This is hard-coded for now because I'm lazy.  It should take parameters.  Easy enough to change, but I haven't gotten around to it.  Just edit the hard coded values for your setup.  I'll fix that eventully, I promise.
+
 SetMotorSpeed(int left, int right)
   Set the speeds for the left and right motors -100 to 100 (0 to stop)
 
